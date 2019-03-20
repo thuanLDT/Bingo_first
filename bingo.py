@@ -1,10 +1,12 @@
 import random
 
 # ビンゴの数字
+
 int_bingo = list(range(1, 76))
 str_bingo = ['{:0>2}'.format(str_bingo) for str_bingo in int_bingo]
 
 # ビンゴの数字リスト
+
 bingo_list = []
 
 #ビンゴカードの列
@@ -16,6 +18,7 @@ line_G = str_bingo[45:60]
 line_O = str_bingo[60:75]
 
 # 表示用カード
+
 card = ''
 
 # 表示用カードを作成
@@ -53,7 +56,6 @@ for i in range(1, 6):
 
     card_row = B + I + N + G + O + '\n'
     card += card_row
-
 
 # 判定リスト
 
@@ -261,6 +263,7 @@ while num <= 75:
         bingo += 1
 
     #表示
+    
     print(card)
     print('REACH: ' + str(reach))
     print('BINGO: ' + str(bingo))
