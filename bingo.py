@@ -257,7 +257,6 @@ while num <= 75:
 
     if len(line_12_numbers) == 1:
         reach += 1
-
     elif len(line_12_numbers) == 0:
         bingo += 1
 
